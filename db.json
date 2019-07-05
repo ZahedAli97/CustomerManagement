@@ -1,0 +1,32 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "firstName": "IronMan",
+      "lastName": "Avenger",
+      "email": "iron@avneger.com",
+      "mobile": 1234567890
+    },
+    {
+      "firstName": "Mir Zahed ",
+      "lastName": "Ali",
+      "email": "zahed@gmail.com",
+      "mobileNumber": "6304140472",
+      "id": 2
+    },
+    {
+      "firstName": "Mir Zahed ",
+      "lastName": "Ali",
+      "email": "zahed@gmail.com",
+      "mobileNumber": "6304140472",
+      "id": 3
+    },
+    {
+      "firstName": "hahahaha",
+      "lastName": "Ali",
+      "email": "zahed@gmail.com",
+      "mobileNumber": "6304140472",
+      "id": 4
+    }
+  ]
+}

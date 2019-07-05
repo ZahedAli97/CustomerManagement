@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- <link rel="stylesheet" href="./main.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <script type="module" src="./main.js"></script>
+    <title>Customer Management</title>
+  </head>
+  <body>
+    <div id="body" class="container text-center">
+      <h1 class="h1 page-header">
+        Customer Management System <small>-By Ali</small>
+      </h1>
+      <!-- <div class="formDiv"> -->
+      <div class=" align-items-center">
+        <form id="mainform">
+          <div class="form-group  align-items-center">
+            <label class="text-center text-uppercase" for="firstName"
+              >First Name:
+            </label>
+
+            <input
+              type="text"
+              name="firstName"
+              id="firstName"
+              class="inputfield form-control-lg"
+              placeholder="Enter Your First Name."
+              required
+            />
+          </div>
+          <!-- <p id="firstName_errors"></p> -->
+          <div class="form-inline form-group align-items-center">
+            <label for="LastName">Last Name: </label>
+            <input
+              type="text"
+              name="lastName"
+              id="lastName"
+              class="inputfield form-control"
+              placeholder="Enter Your Last Name. (Optional)"
+            />
+          </div>
+          <!-- <p id="lastName_errors"></p> -->
+          <div class="form-inline form-group">
+            <label for="email">Email: </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="inputfield form-control"
+              placeholder="Enter Your Email."
+              required
+            />
+          </div>
+          <!-- <p id="email_errors"></p> -->
+
+          <div class="form-inline form-group">
+            <label for="mobileNumber">Mobile: </label>
+            <input
+              type="text"
+              name="mobileNumber"
+              class="inputfield form-control"
+              id="mobileNumber"
+              minlength="10"
+              maxlength="12"
+              placeholder="Enter Your Mobile Number."
+              required
+            />
+          </div>
+          <!-- <p id="mobileNumber_errors"></p> -->
+          <div class="form-inline form-group">
+            <input
+              type="submit"
+              id="add"
+              name="submitButton"
+              class="submitButton form-control"
+              value="ADD"
+            />
+          </div>
+        </form>
+      </div>
+      <div class="tableDiv">
+        <table id="customerTable">
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Mobile</th>
+          <th>Email</th>
+          <th>Action</th>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

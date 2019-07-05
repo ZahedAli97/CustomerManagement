@@ -1,0 +1,65 @@
+.formDiv {
+  width: 50vw;
+  text-align: center;
+  margin: auto;
+  align-content: center;
+  border-style: solid;
+  border-width: thin;
+  position: relative;
+}
+
+.inputfield {
+  /* position: absolute; */
+  width: 20vw;
+  margin: auto;
+  align-items: center;
+  margin: 1vw;
+}
+
+.h1 {
+  margin-left: 25vw;
+  margin-right: 25vw;
+  font-size: 3vw;
+  color: mediumaquamarine;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+#body {
+  background-color: red;
+  margin: auto;
+  align-items: center;
+}
+
+table,
+th,
+td {
+  margin: auto;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.actionButton {
+  text-align: center;
+}
+
+p {
+  display: block;
+}
+
+label {
+  margin: 1vw;
+}
+
+#email {
+  margin-left: 4vw;
+}
+#mobileNumber {
+  margin-left: 3vw;
+}
+
+#add {
+  width: 5vw;
+  margin-left: 25%;
+  margin-right: 25%;
+}
