@@ -5,28 +5,14 @@
       "lastName": "Ali",
       "email": "zahed@gmail.com",
       "mobileNumber": "6304140472",
-      "id": 3
+      "id": 1
     },
     {
-      "firstName": "hahahaha",
-      "lastName": "Ali",
-      "email": "zahed@gmail.com",
+      "firstName": "mani",
+      "lastName": "veluguri",
+      "email": "mani@mail.com",
       "mobileNumber": "6304140472",
-      "id": 4
-    },
-    {
-      "firstName": "Mir Zahed ",
-      "lastName": "ali",
-      "email": "zahed@gmail.com",
-      "mobileNumber": "9959823107",
-      "id": 8
-    },
-    {
-      "firstName": "Mir Zahed ",
-      "lastName": "Ali",
-      "email": "zahed@gmail.com",
-      "mobileNumber": "9959823107",
-      "id": 9
+      "id": 2
     }
   ]
 }

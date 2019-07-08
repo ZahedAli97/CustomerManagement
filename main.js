@@ -46,7 +46,12 @@ document.body.onload = function() {
       return "Yes";
     }
     function mobilechecker() {
-      if (isNaN(mobilevalue) || mobilevalue.length != 10 || mobilevalue == "") {
+      if (
+        isNaN(mobilevalue) ||
+        mobilevalue.length != 10 ||
+        mobilevalue == "" ||
+        mobilevalue < 0
+      ) {
         console.log(
           isNaN(mobilevalue),
           mobilevalue.length != 10,
@@ -155,6 +160,19 @@ document.body.onload = function() {
     // Mobile : ${customer.mobileNumber}`;
   });
 
+  // Ask user and confirm - confirm() : alert with cancel
+  function askdeleteCustomer(customerid, customerfirstname, customerlastname) {
+    if (
+      confirm(
+        `Are you sure you want to delete customer: ${customerfirstname} ${customerlastname}?`
+      )
+    ) {
+      let data = deleteCustomer(customerid);
+    } else {
+      return;
+    }
+  }
+
   // Print Customers from db.json
   function printer(customers) {
     for (let customer of customers) {
@@ -191,7 +209,12 @@ document.body.onload = function() {
 
       // () fires immediately
       //   button.setAttribute("onclick", `deleteCustomer(${customer.id})`);    Why is this wrong?
-      button.onclick = deleteCustomer.bind(null, customer.id);
+      button.onclick = askdeleteCustomer.bind(
+        null,
+        customer.id,
+        customer.firstName,
+        customer.lastName
+      );
 
       action.appendChild(button);
 
