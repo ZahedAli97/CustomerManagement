@@ -12,11 +12,19 @@ document.body.onload = function() {
   let _firstNameError = document.querySelector("#nameerror");
   let _emailError = document.querySelector("#emailerror");
   let _mobileError = document.querySelector("#mobileerror");
+  let _catcher = document.querySelector("#catcherdiv");
 
   // Every time posts are updated Fetch them and call the printer
   fetch(`${config.endpoint}/customers`)
     .then(res => res.json())
-    .then(data => printer(data));
+    .then(data => printer(data))
+    .catch(err => {
+      let h1 = document.createElement("h1");
+      h1.textContent = "OOPS! Looks Like the Data Base is asleep.";
+      h1.color = "white";
+      h1.className = "text-center";
+      _catcher.appendChild(h1);
+    });
 
   // Save posts into db.json
   let mainform = document.querySelector("#mainform");
