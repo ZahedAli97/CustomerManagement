@@ -16,79 +16,93 @@
     <title>Customer Management</title>
   </head>
   <body>
-    <div id="body" class="container text-center">
-      <h1 class="h1 page-header">
-        Customer Management System <small>-By Ali</small>
-      </h1>
-      <!-- <div class="formDiv"> -->
-      <div class=" align-items-center">
-        <form id="mainform">
-          <div class="form-group  align-items-center">
-            <label class="text-center text-uppercase" for="firstName"
-              >First Name:
-            </label>
-
-            <input
-              type="text"
-              name="firstName"
-              id="firstName"
-              class="inputfield form-control-lg"
-              placeholder="Enter Your First Name."
-              required
-            />
-          </div>
-          <!-- <p id="firstName_errors"></p> -->
-          <div class="form-inline form-group align-items-center">
-            <label for="LastName">Last Name: </label>
-            <input
-              type="text"
-              name="lastName"
-              id="lastName"
-              class="inputfield form-control"
-              placeholder="Enter Your Last Name. (Optional)"
-            />
-          </div>
-          <!-- <p id="lastName_errors"></p> -->
-          <div class="form-inline form-group">
-            <label for="email">Email: </label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              class="inputfield form-control"
-              placeholder="Enter Your Email."
-              required
-            />
-          </div>
-          <!-- <p id="email_errors"></p> -->
-
-          <div class="form-inline form-group">
-            <label for="mobileNumber">Mobile: </label>
-            <input
-              type="text"
-              name="mobileNumber"
-              class="inputfield form-control"
-              id="mobileNumber"
-              minlength="10"
-              maxlength="12"
-              placeholder="Enter Your Mobile Number."
-              required
-            />
-          </div>
-          <!-- <p id="mobileNumber_errors"></p> -->
-          <div class="form-inline form-group">
-            <input
-              type="submit"
-              id="add"
-              name="submitButton"
-              class="submitButton form-control"
-              value="ADD"
-            />
-          </div>
-        </form>
+    <div class=" bg-dark text-white">
+      <div class="container" style="padding: 1vw">
+        <h1 class="page-header text-center display-4">
+          Customer Management System <small class="text-muted">-By Ali</small>
+        </h1>
       </div>
-      <div class="tableDiv">
-        <table id="customerTable">
+      <!-- <div class="formDiv"> -->
+      <div class="container" style="margin-left:25vw;margin-right:25vw;">
+        <div
+          class="card text-white bg-secondary border-white"
+          style="width: 40rem;"
+        >
+          <div class="container" style="padding: 2vw;">
+            <form id="mainform" novalidate>
+              <div class="form-group  align-items-center">
+                <label class="text-center text-uppercase" for="firstName"
+                  >First Name:
+                </label>
+
+                <input
+                  type="text"
+                  name="firstName"
+                  id="firstName"
+                  class="inputfield form-control"
+                  placeholder="Enter Your First Name."
+                  required
+                />
+              </div>
+              <div id="nameerror"></div>
+              <!-- <p id="firstName_errors"></p> -->
+              <div class=" form-group align-items-center">
+                <label for="LastName">Last Name: </label>
+                <input
+                  type="text"
+                  name="lastName"
+                  id="lastName"
+                  class="inputfield form-control"
+                  placeholder="Enter Your Last Name. (Optional)"
+                />
+              </div>
+              <!-- <p id="lastName_errors"></p> -->
+              <div class="form-group">
+                <label for="email">Email: </label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="inputfield form-control"
+                  placeholder="Enter Your Email."
+                  required
+                />
+              </div>
+              <div id="emailerror"></div>
+              <!-- <p id="email_errors"></p> -->
+
+              <div class="form-group">
+                <label for="mobileNumber">Mobile: </label>
+                <input
+                  type="text"
+                  name="mobileNumber"
+                  class="inputfield form-control"
+                  id="mobileNumber"
+                  minlength="10"
+                  maxlength="12"
+                  placeholder="Enter Your Mobile Number."
+                  required
+                />
+              </div>
+              <div id="mobileerror"></div>
+
+              <!-- <p id="mobileNumber_errors"></p> -->
+              <div class="form-group text-center">
+                <input
+                  type="submit"
+                  id="add"
+                  name="submitButton"
+                  class="submitButton form-control btn btn-dark border-white "
+                  value="ADD"
+                  style="width:10vw;"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="tableDiv" style="margin-top:2vw;">
+        <table id="customerTable" class="table table-striped table-dark">
           <th>First Name</th>
           <th>Last Name</th>
           <th>Mobile</th>

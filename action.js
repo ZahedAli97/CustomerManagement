@@ -6,10 +6,12 @@ export function saveCustomer(customer) {
     body: JSON.stringify(customer),
     headers: {
       "Content-Type": "application/json"
+      // Noting the db that package is of type json
     }
   }).then(res => res.json());
 }
 
+// Deleting Customer using customer id
 export function deleteCustomer(customerid) {
   console.log("From delete customer", customerid);
   return fetch(`${config.endpoint}/customers/${customerid}`, {
